@@ -587,3 +587,7 @@ footer.footer p.small a:hover, footer.footer p.small a.focus {
 .ppad{
 	padding-top: 100px;
 }
+
+.justi{
+	text-align: justify;
+}
