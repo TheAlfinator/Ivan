@@ -18,12 +18,24 @@
   <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="scripts/all-plugins.js"></script>
   <script type="text/javascript" src="scripts/plugins-activate.js"></script>
+  <script type="text/javascript" src="scripts/bootstrap.bundle.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script>
+   function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
+ </script>
+   <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
 </head>
 
 <body id="page-top">
-<!-- Navigation -->
+<!-- Navigation --><!-- 
   <div class="logo">
-    <!-- <i class="fa fa-plane" aria-hidden="true"> --><span>Axel</span></i>
+    <i class="fa fa-plane" aria-hidden="true"><span></span></i> -->
   </div>
   <a class="menu-toggle rounded" href="#">
     <i class="fa fa-bars"></i>
@@ -34,22 +46,22 @@
         <a class="smooth-scroll" href="#Header"></a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="smooth-scroll" href="#page-top">Home</a>
+        <a class="smooth-scroll" href="#page-top">Inicio</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="smooth-scroll" href="#About">About</a>
+        <a class="smooth-scroll" href="#About">Sobre el artista</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="smooth-scroll" href="#Services">Services</a>
+        <a class="smooth-scroll" href="#Services">Premiaciones</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="smooth-scroll" href="#Portfolio">Portfolio</a>
-      </li>
+        <a class="smooth-scroll" href="#Portfolio">Portafolio</a>
+      </li><!-- 
       <li class="sidebar-nav-item">
         <a class="smooth-scroll" href="#Testimonials">Testimonials</a>
-      </li>
+      </li> -->
       <li class="sidebar-nav-item">
-        <a class="smooth-scroll" href="#Contact">Contact</a>
+        <a class="smooth-scroll" href="#Contact">Contacto</a>
       </li>
     </ul>
   </nav>
@@ -77,7 +89,7 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="block-heading">
-            <h2>Quien es</h2>
+            <h2>Sobre el artista</h2>
           </div>
           <div>
           <p class="lead justi">Estudio la Licenciatura en Artes Visuales en el Instituto Allende en la Ciudad de San Miguel de Allende, Gto. Ha tomado cursos complementarios de artes plásticas con los pintores Guillermo Guerrero y Miguel Ángel Garrido.
@@ -94,8 +106,8 @@
   <section id="Services" class="content-section text-center">
     <div class="container">
       <div class="block-heading">
-        <h2>Premiaciones</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <h2>Premiaciones</h2><!-- 
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
       </div>
       <div class="row">
         <div class="col-md-3 col-sm-6">
@@ -136,8 +148,7 @@
             </div>
             <div class="service-content">
               <h3>Concurso Estatal de Pintura 2011</h3>
-              <p class="justi"> Mención Honorifica en el Concurso Estatal de Pintura 2011, Homenaje a Luis García Guerrero otorgada por el Honorable Ayuntamiento 
-              de Guanajuato a través de la Dirección Municipal de Cultura y Educación, en colaboración con el Museo Iconográfico del Quijote y la Casa Museo Gene Byron.
+              <p class="justi"> Mención Honorifica en el Concurso Estatal de Pintura 2011, Homenaje a Luis García Guerrero.
               </p>
             </div>
           </div>
@@ -152,7 +163,7 @@
             </div>
             <div class="service-content">
               <h3>FONCA</h3>
-              <p class="justi">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+              <p class="justi">Beca del programa Jovenes Creadores del FONCA, que otorga el consejo nacional para la cultura y las artes 2016-2017.</p>
             </div>
           </div>
         </div>
@@ -161,11 +172,19 @@
   </section>
   <section class="content-section text-center" id="Portfolio">
 
+
 <!-- Serie Salvajes -->
+<h2>Portafolio</h2>
+<div>
+  <button class="col-sm-12 col-lg-12 col-md-12 btn-series salvajes" data-toggle="collapse" data-target="#Salvajes"><span>       
+    <h2 class="series">Salvajes</h2>
+    <p class="series">2020</p>
+  </span></button>
+</div>
+<div id="Salvajes" class="mb-3">
     <div class="container ">
       <div class="block-heading">
-        <h2>Salvajes 2020</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
       </div>
       <div class="portfolio-wrapper clearfix photos">
         <div>
@@ -187,8 +206,8 @@
               <div class="content-overlay"></div>
               <img class="content-image" src="images_ivan/serie_salvajes/26_small.png">
               <div class="content-details fadeIn-bottom">
-                <h5 class="p-title">26</h5>
-                <p class="p-desc">m x n</p>
+                <h5 class="p-title">Supervivencia</h5>
+                <p class="p-desc">100 x 70</p>
                 <span class="zoom"><i class="fa fa-search-plus"></i></span>
               </div>
             </div>
@@ -201,7 +220,7 @@
               <img class="content-image" src="images_ivan/serie_salvajes/no_salgas_small.png">
               <div class="content-details fadeIn-bottom">
                 <h5 class="p-title">No Salgas</h5>
-                <p class="p-desc">m x n</p>
+                <p class="p-desc">100 x 70</p>
                 <span class="zoom"><i class="fa fa-search-plus"></i></span>
               </div>
             </div>
@@ -214,7 +233,7 @@
               <img class="content-image" src="images_ivan/serie_salvajes/hienas_small.png">
               <div class="content-details fadeIn-bottom">
                 <h5 class="p-title">Hienas</h5>
-                <p class="p-desc">m x n</p>
+                <p class="p-desc">120 x 110</p>
                 <span class="zoom"><i class="fa fa-search-plus"></i></span>
               </div>
             </div>
@@ -226,8 +245,8 @@
               <div class="content-overlay"></div>
               <img class="content-image" src="images_ivan/serie_salvajes/25_small.png">
               <div class="content-details fadeIn-bottom">
-                <h5 class="p-title">25</h5>
-                <p class="p-desc">m x n</p>
+                <h5 class="p-title">Hienas II</h5>
+                <p class="p-desc">90 x 60</p>
                 <span class="zoom"><i class="fa fa-search-plus"></i></span>
               </div>
             </div>
@@ -235,12 +254,19 @@
         </div>
       </div>
     </div>
+</div>
 
 <!-- Series Intimidad Expectante -->
+<div>
+  <button class="col-sm-12 col-lg-12 col-md-12 btn-series intimidad" data-toggle="collapse" data-target="#Intimidad"><span>
+    <h2 class="series">Intimidad Expectante</h2>
+    <p class="series">Serie FONCA 2016-2017</p>
+    </span>
+  </button>
+</div>
+<div id="Intimidad" class="mb-3">
     <div class="container ppad">
       <div class="block-heading">
-        <h2>Intimidad Expectante 2017</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
       </div>
       <div class="portfolio-wrapper clearfix photos">
         <div>
@@ -276,7 +302,7 @@
               <img class="content-image" src="images_ivan/serie_intimidad/antonio_small.png">
               <div class="content-details fadeIn-bottom">
                 <h5 class="p-title">Antonio</h5>
-                <p class="p-desc">m x n</p>
+                <p class="p-desc">120 x 90</p>
                 <span class="zoom"><i class="fa fa-search-plus"></i></span>
               </div>
             </div>
@@ -289,7 +315,7 @@
               <img class="content-image" src="images_ivan/serie_intimidad/en_brazos_small.png">
               <div class="content-details fadeIn-bottom">
                 <h5 class="p-title">En brazos</h5>
-                <p class="p-desc">80 x 50 cms</p>
+                <p class="p-desc">80 x 50 vendido</p>
                 <span class="zoom"><i class="fa fa-search-plus"></i></span>
               </div>
             </div>
@@ -302,7 +328,7 @@
               <img class="content-image" src="images_ivan/serie_intimidad/castillos_de_arena_small.png">
               <div class="content-details fadeIn-bottom">
                 <h5 class="p-title">Castillos de arena</h5>
-                <p class="p-desc">m x n</p>
+                <p class="p-desc">120 x 70 vendido</p>
                 <span class="zoom"><i class="fa fa-search-plus"></i></span>
               </div>
             </div>
@@ -328,7 +354,7 @@
               <img class="content-image" src="images_ivan/serie_intimidad/autorretrato_small.png">
               <div class="content-details fadeIn-bottom">
                 <h5 class="p-title">Autorretrato</h5>
-                <p class="p-desc">m x n</p>
+                <p class="p-desc">80 x 90 vendido</p>
                 <span class="zoom"><i class="fa fa-search-plus"></i></span>
               </div>
             </div>
@@ -341,7 +367,7 @@
               <img class="content-image" src="images_ivan/serie_intimidad/shot_small.png">
               <div class="content-details fadeIn-bottom">
                 <h5 class="p-title">Shot!</h5>
-                <p class="p-desc">m x n</p>
+                <p class="p-desc">50 x 50 vendido</p>
                 <span class="zoom"><i class="fa fa-search-plus"></i></span>
               </div>
             </div>
@@ -380,7 +406,7 @@
               <img class="content-image" src="images_ivan/serie_intimidad/ton_es_un_coyote_small.png">
               <div class="content-details fadeIn-bottom">
                 <h5 class="p-title">Ton es un coyote</h5>
-                <p class="p-desc">m x n</p>
+                <p class="p-desc">120 x 90</p>
                 <span class="zoom"><i class="fa fa-search-plus"></i></span>
               </div>
             </div>
@@ -393,7 +419,7 @@
               <img class="content-image" src="images_ivan/serie_intimidad/luz_de_torretas_small.png">
               <div class="content-details fadeIn-bottom">
                 <h5 class="p-title">Luz de torretas</h5>
-                <p class="p-desc">80 x 40 cms</p>
+                <p class="p-desc">80 x 40 vendido</p>
                 <span class="zoom"><i class="fa fa-search-plus"></i></span>
               </div>
             </div>
@@ -406,7 +432,7 @@
               <img class="content-image" src="images_ivan/serie_intimidad/calmando_al_nieto_small.png">
               <div class="content-details fadeIn-bottom">
                 <h5 class="p-title">Calmando al nieto</h5>
-                <p class="p-desc">m x n</p>
+                <p class="p-desc">110 x 90 vendido</p>
                 <span class="zoom"><i class="fa fa-search-plus"></i></span>
               </div>
             </div>
@@ -419,7 +445,7 @@
               <img class="content-image" src="images_ivan/serie_intimidad/notificaciones_en_boda.jpg">
               <div class="content-details fadeIn-bottom">
                 <h5 class="p-title">Notificaciones en boda</h5>
-                <p class="p-desc">m x n</p>
+                <p class="p-desc">70 x 50</p>
                 <span class="zoom"><i class="fa fa-search-plus"></i></span>
               </div>
             </div>
@@ -444,7 +470,7 @@
               <div class="content-overlay"></div>
               <img class="content-image" src="images_ivan/serie_intimidad/bienvenido2.jpg">
               <div class="content-details fadeIn-bottom">
-                <h5 class="p-title">Bienvenido</h5>
+                <h5 class="p-title">Bienvenido II</h5>
                 <p class="p-desc">70 x 30</p>
                 <span class="zoom"><i class="fa fa-search-plus"></i></span>
               </div>
@@ -458,7 +484,7 @@
               <img class="content-image" src="images_ivan/serie_intimidad/la_casa_de_denisse.jpg">
               <div class="content-details fadeIn-bottom">
                 <h5 class="p-title">La casa de Denisse</h5>
-                <p class="p-desc">110 x 70</p>
+                <p class="p-desc">110 x 70 vendido</p>
                 <span class="zoom"><i class="fa fa-search-plus"></i></span>
               </div>
             </div>
@@ -484,7 +510,7 @@
               <img class="content-image" src="images_ivan/serie_intimidad/primates_sentados.jpg">
               <div class="content-details fadeIn-bottom">
                 <h5 class="p-title">Primates sentados</h5>
-                <p class="p-desc">80 x 50</p>
+                <p class="p-desc">80 x 50 vendido</p>
                 <span class="zoom"><i class="fa fa-search-plus"></i></span>
               </div>
             </div>
@@ -510,7 +536,7 @@
               <img class="content-image" src="images_ivan/serie_intimidad/reunion_en_marins.jpg">
               <div class="content-details fadeIn-bottom">
                 <h5 class="p-title">Reunion en Marins</h5>
-                <p class="p-desc">90 x 50</p>
+                <p class="p-desc">90 x 50 vendido</p>
                 <span class="zoom"><i class="fa fa-search-plus"></i></span>
               </div>
             </div>
@@ -536,7 +562,7 @@
               <img class="content-image" src="images_ivan/serie_intimidad/gitanos.jpg">
               <div class="content-details fadeIn-bottom">
                 <h5 class="p-title">Gitanos</h5>
-                <p class="p-desc">80 x 40</p>
+                <p class="p-desc">80 x 40 vendido</p>
                 <span class="zoom"><i class="fa fa-search-plus"></i></span>
               </div>
             </div>
@@ -544,12 +570,21 @@
         </div>
       </div>
     </div>
+</div>
+
+
 
 <!-- Serie Kauyumari, venados -->
+<div>
+  <button class="col-sm-12 col-lg-12 col-md-12 btn-series venados" data-toggle="collapse" data-target="#Venados"><span>        
+    <h2 class="series">Kauyumari, Venados</h2>
+    <p class="series">2013</p>
+    </span>
+  </button>
+</div>
+  <div id="Venados" class="mb-3" >
     <div class="container ppad">
       <div class="block-heading">
-        <h2>Kauyumari, Venados 2013</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
       </div>
       <div class="portfolio-wrapper clearfix photos">
         <div>
@@ -598,7 +633,7 @@
               <img class="content-image" src="images_ivan/serie_venados/15_Kauyumari_small.png">
               <div class="content-details fadeIn-bottom">
                 <h5 class="p-title">Kauyumari</h5>
-                <p class="p-desc">m x n</p>
+                <p class="p-desc">160 x 140</p>
                 <span class="zoom"><i class="fa fa-search-plus"></i></span>
               </div>
             </div>
@@ -723,6 +758,7 @@
         </div>
       </div>
     </div>
+  </div>
 
   </section>
 
@@ -782,25 +818,27 @@
   <section id="Contact" class="content-section">
     <div class="container">
       <div class="block-heading">
-        <h2>Contact Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <h2>Contacto</h2><!-- 
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
       </div>
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="col-sm-12 col-md-12 col-lg-12">
           <div class="contact-wrapper">
-            <div class="address-block border-bottom">
-              <h3 class="add-title">Headquaters</h3>
+            <div class="address-block "><!-- 
+              <h3 class="add-title">Headquaters</h3> -->
+              <div class="text-center">
               <div class="c-detail">
-                <span class="c-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span><span class="c-info">&nbsp;35 Street - Cheyenne, CO 80810</span>
+                <span class="c-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span><span class="c-info">&nbsp;Celaya, Gto.</span>
               </div>
               <div class="c-detail">
-                <span class="c-icon"><i class="fa fa-phone" aria-hidden="true"></i></span><span class="c-info">+123 4567 898</span>
+                <span class="c-icon"><i class="fa fa-phone" aria-hidden="true"></i></span><a class="c-info" href="tel:+524612281640" target="_blank">+52 461 228 1640</a>
               </div>
               <div class="c-detail">
-                <span class="c-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span><span class="c-info">email@yourdomain.com</span>
+                <span class="c-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span><a class="c-info" href="mailto:franchesterjr@gmail.com" target="_blank">franchesterjr@gmail.com</a>
               </div>
             </div>
-            <div class="address-block">
+          </div>
+            <!-- <div class="address-block">
               <h3 class="add-title">Branch</h3>
               <div class="c-detail">
                 <span class="c-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span><span class="c-info">&nbsp;98 Berry - Cheyenne, CO 80810</span>
@@ -811,10 +849,10 @@
               <div class="c-detail">
                 <span class="c-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span><span class="c-info">email@yourdomain.com</span>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6">
+       <!--  <div class="col-sm-12 col-md-6 col-lg-6">
           <div class="form-wrap">
             <form action="javascript:void(0)" method="post">
               <div class="fname floating-label">
@@ -838,11 +876,14 @@
                 <label for="email">Message</label>
               </div>
               <div class="submit-btn">
-                <button type="submit">Submit</button>
+                <button class="g-recaptcha" 
+                  data-sitekey="reCAPTCHA_site_key" 
+                  data-callback='onSubmit' 
+                  data-action='submit'>Submit</button>
               </div>
             </form>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -856,7 +897,7 @@
             </a>
         </li> -->
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/axellemairepintor/">
+          <a class="social-link rounded-circle text-white mr-3 ml-3" href="https://www.instagram.com/axellemairepintor/" target="_blank">
               <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
         </li>
@@ -866,8 +907,10 @@
             </a>
         </li> -->
       </ul>
+      <div class="container">
       <p class="text-muted small mb-0">Copyright © Axel Hidalgo 2021</p>
-      <p class="text-muted small mb-0">Designed by <a href="https://www.position2.com/" target="_balnk">Position2</p>
+      <p class="text-muted small mb-0">Designed by <a href="https://www.position2.com/" target="_blank">Position2</a></p>
+      </div>
     </div>
   </footer>
 </body>

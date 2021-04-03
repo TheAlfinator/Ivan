@@ -136,6 +136,7 @@ span {
 #fondo {
   position: relative;	
   width: 100vw;
+  background-size:100% auto;
 }
 #Banner {
   position: relative;
@@ -150,9 +151,10 @@ span {
   left: 50%;
 }
 .portada{
-  background: url('../images_ivan/e_i/portada_ivan.jpg') no-repeat center center fixed;
+  background: url('../images_ivan/FOTO PORTADA/estudio.jpg') no-repeat center center fixed;
   width: 100vw;
   height: auto;
+  background-size:100% auto;
 }
 #Banner .content-wrap h1 {
   font-size: 80px;
@@ -453,9 +455,12 @@ span {
   margin-bottom: 40px;
 }
 #Contact .contact-wrapper {
+	border-left: 1px solid #cecece;
   border-right: 1px solid #cecece;
   margin-right: 40px;
+  margin-left: 40px;
   padding: 0 40px 40px 0;
+  text-align: center;
 }
 #Contact .contact-wrapper h3 {
   font-size: 22px;
@@ -463,8 +468,8 @@ span {
   margin: 0 0 20px;
 }
 #Contact .contact-wrapper span {
-  color: #999999;
-  font-size: 16px;
+  color: #212529;
+  font-size: 18px;
   line-height: 180%;
 }
 #Contact .address-block.border-bottom {
@@ -590,4 +595,55 @@ footer.footer p.small a:hover, footer.footer p.small a.focus {
 
 .justi{
 	text-align: justify;
+}
+.intimidad{
+	background: url('../images_ivan/serie_intimidad/intimidad_button.png') no-repeat center center;
+	background-size:100% auto;
+}
+.salvajes{
+	background: url('../images_ivan/serie_salvajes/salvajes_button.png') no-repeat center center;
+	background-size:100% auto;
+}
+.venados{
+	background: url('../images_ivan/serie_venados/venados_button.png') no-repeat center center;
+	background-size:100% auto;
+}​
+#img.source-image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.btn-series {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;/*
+    white-space: nowrap;*/
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0 0 0 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    height:200px;
+}
+.series h2 p{
+	border:0;
+	margin:0;
+	color: white;
+}
+span.series{
+	height:200px;
+	display: flex; 
+    justify-content: center
 }
