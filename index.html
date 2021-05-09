@@ -848,11 +848,13 @@
     function ajax(){
       const http = new XMLHttpRequest();
       const url = 'https://thealfinator.github.io/Ivan/snippets/salvajes.html';
+      var executed1 = false;
 
       http.onreadystatechange = function(){
-        if(this.readyState == 4 && this.status == 200){
+        if(this.readyState == 4 && this.status == 200 && !executed1){
           console.log(this.responseText);
           document.getElementById("response").innerHTML = this.responseText;
+          executed1 = true;
         }
       }
 
