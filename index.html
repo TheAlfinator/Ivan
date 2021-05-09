@@ -181,15 +181,8 @@
     <p class="series">2020</p>
   </span></button>
 </div>
-<div id="Salvajes" class="mb-3">
-    <div class="container ">
-      <div class="block-heading">
+<div id="response">
 
-      </div>
-      <div class="portfolio-wrapper clearfix photos">
-        
-      </div>
-    </div>
 </div>
 
 <!-- Series Intimidad Expectante -->
@@ -858,7 +851,8 @@
 
       http.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
-          console.log(this.response);
+          console.log(this.responseText);
+          document.getElementById("response").innerHTML = this.responseText;
         }
       }
 
@@ -869,7 +863,6 @@
 
     document.getElementById("snippet_salvajes").addEventListener("click", function(){
       ajax();
-
     });
   </script>
 </body>
