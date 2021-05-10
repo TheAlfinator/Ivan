@@ -369,12 +369,13 @@
   </footer>
 
 
+
   <script>
     var executed1 = false;
     var executed2 = false;
     var executed3 = false;
 
-    function ajax_salvajes(){
+    async function ajax_salvajes(){
       const http = new XMLHttpRequest();
       const url = 'https://thealfinator.github.io/Ivan/snippets/salvajes.html';
       
@@ -394,16 +395,16 @@
 
 
 
-    function ajax_intimidad_expectante(){
+    async function ajax_intimidad_expectante(){
       const http = new XMLHttpRequest();
       const url = 'https://thealfinator.github.io/Ivan/snippets/intimidad_expectante.html';
       
 
       http.onreadystatechange = function(){
-        if(this.readyState == 4 && this.status == 200 && !executed1){
+        if(this.readyState == 4 && this.status == 200 && !executed2){
           console.log(this.responseText);
           document.getElementById("response_intimidad_expectante").innerHTML = this.responseText;
-          executed1 = true;
+          executed2 = true;
         }
       }
 
@@ -413,16 +414,16 @@
     }
 
 
-      function ajax_venados(){
+      async function ajax_venados(){
       const http = new XMLHttpRequest();
       const url = 'https://thealfinator.github.io/Ivan/snippets/venados.html';
       
 
       http.onreadystatechange = function(){
-        if(this.readyState == 4 && this.status == 200 && !executed1){
+        if(this.readyState == 4 && this.status == 200 && !executed3){
           console.log(this.responseText);
           document.getElementById("response_venados").innerHTML = this.responseText;
-          executed1 = true;
+          executed3 = true;
         }
       }
 
